@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Roboto_Regular";
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+  }
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+  .container {
+    display: flex;
+    border-radius: 2em;
+    flex-direction: column;
+    padding: 2.7em;
+    width: 49%;
+    height: 65%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+  
+  .info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+  .main {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image {
+    display: flex;
+    align-self: flex-end;
+  }
+  .title {
+    font-family: Roboto;
+    font-size: 4.3vw;
+    font-weight: 200;
+    color: hsl(234, 29%, 20%);
+    padding-bottom: 0.2em;
+  }
+  
+  p {
+    font-family: Roboto_Regular;
+    font-size: 16px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  label {
+    font-family: Roboto;
+  }
+  
+  input {
+    height: 3em;
+    border-radius: 0.5em;
+    border-width: 1px;
+    border-color: rgb(233, 227, 227);
+    border-style: solid;
+  }
+  
+  .bullets {
+    padding: 0;
+    font-family: Roboto_Regular;
+    font-size: 16px;
+    list-style-type: none;
+  }
+  
+  .bullets li::before {
+    content: url(./assets/images/icon-list.svg);
+    margin-right: 0.5em;
+  }
+  ul {
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
+  
+  button {
+    font-family: Roboto;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    height: 3em;
+    border-radius: 0.5em;
+    border-style: none;
+  }
+  .signup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    width: 90%;
+  }
+  
+  #email::placeholder {
+    font-family: Roboto_Regular;
+    font-size: 16px;
+    padding: 1em;
+  }
+  
+  .attribution {
+    font-family: Roboto_Regular;
+  }
+  
