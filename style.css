@@ -40,7 +40,6 @@ body {
 .image {
   display: flex;
   align-self: flex-end;
-  /* height: 200%; */
 }
 svg {
   box-sizing: border-box;
@@ -48,7 +47,6 @@ svg {
   height: 70em;
   display: flex;
   margin-bottom: 2em;
-  /* padding: 1em; */
 }
 
 .title {
@@ -128,9 +126,19 @@ button:hover {
 .attribution {
   font-family: Roboto_Regular;
 }
-
 #validation {
+  font-family: Roboto;
+  font-size: 11px;
+}
+
+.topOfBox {
   display: flex;
-  align-self: flex-end;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
   font-family: Roboto_Regular;
+  font-size: 16px;
+  padding-left: 1em;
 }
