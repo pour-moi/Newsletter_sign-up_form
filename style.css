@@ -10,12 +10,14 @@
 body {
   background-color: hsl(235, 18%, 26%);
 }
+
 .container {
   display: flex;
   border-radius: 2em;
   flex-direction: column;
-  padding: 4.1em;
-  padding-right: 6em;
+  padding: 5em;
+  padding-right: 7.1em;
+  padding-left: 3.5em;
   width: 49%;
   height: 65%;
   justify-content: center;
@@ -27,12 +29,12 @@ body {
   width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.5em;
+  align-items: flex-start;
+  gap: 1.5em;
   flex-wrap: wrap;
 }
 .main {
-  height: 95vh;
+  height: 94vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,6 +49,11 @@ svg {
   height: 70em;
   display: flex;
   margin-bottom: 2em;
+}
+.right svg {
+  max-height: 100vh;
+  width: 23em;
+  height: 40em;
 }
 
 .title {
@@ -128,16 +135,16 @@ button:hover {
 }
 #validation {
   font-family: Roboto;
-  font-size: 11px;
 }
 
 .topOfBox {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5em;
+  font-size: 13px;
 }
 
 input[type="text"] {
-  box-sizing: border-box;
   font-family: Roboto_Regular;
   font-size: 16px;
   padding-left: 1em;
