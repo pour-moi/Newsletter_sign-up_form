@@ -29,10 +29,12 @@
   <body>
     <!-- Sign-up form start -->
     <div class="main">
-      <div class="container">
+      <div id="container">
         <div class="info">
           <div class="title">Stay updated!</div>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <p class="message">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
           <div class="para">
             <ul class="bullets">
               <li>Product discovery and building what matters</li>
@@ -51,7 +53,7 @@
               placeholder="email@company.com"
             /><br />
 
-            <button>Subscribe to monthly newsletter</button>
+            <button id="subscribe">Subscribe to monthly newsletter</button>
           </div>
         </div>
         <div class="right">
@@ -66,18 +68,25 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
-
+    <div class="container1">
+      <div id="thank-you-message" style="display: none">
+        <div class="bullet"></div>
+        <h1 class="subscribed">Thanks for subscribing!</h1>
+        <p class="confirmation">
+          A confirmation email has been sent to <br />ash@loremcompany.com.
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button id="dismiss">Dismiss message</button>
+      </div>
+    </div>
     <!-- Success message end -->
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/pour-moi">Biruk.M</a>.
+      >. Coded by <a href="#">Biruk.M</a>.
     </div>
   </body>
   <script src="script.js"></script>
