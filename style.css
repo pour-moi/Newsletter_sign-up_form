@@ -106,6 +106,12 @@ button {
   border-radius: 0.5em;
   border-style: none;
 }
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(4, 100%, 67%);
+}
+
 .signup {
   display: flex;
   flex-direction: column;
@@ -120,5 +126,11 @@ button {
 }
 
 .attribution {
+  font-family: Roboto_Regular;
+}
+
+#validation {
+  display: flex;
+  align-self: flex-end;
   font-family: Roboto_Regular;
 }
