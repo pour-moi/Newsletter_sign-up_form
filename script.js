@@ -2,11 +2,24 @@ let emailInput = document.getElementById("email");
 let validation = document.getElementById("validation");
 let subscribe = document.getElementById("subscribe");
 let input = document.querySelector("input[type='text']");
+let dismiss = document.getElementById("dismiss");
+let email = document.getElementById("email").value;
+let confirmationMessage = document.querySelector(".confirmation");
+
+dismiss.addEventListener("click", function () {
+  document.getElementById("thank-you-message").style.display = "none";
+  document.getElementById("container").style.display = "flex";
+});
 
 subscribe.addEventListener("click", function () {
   let email = emailInput.value;
   if (validateEmail(email)) {
-    validation.textContent = "Valid Email Address";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("thank-you-message").style.display = "block";
+    confirmationMessage.textContent =
+      "A confirmation email has been sent to " +
+      email +
+      ". Please open it and click the button inside to confirm your subscription.";
   } else {
     validation.style.color = "rgb(248, 58, 58)";
     validation.textContent = "Valid email required";
