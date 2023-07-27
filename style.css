@@ -11,7 +11,7 @@ body {
   background-color: hsl(235, 18%, 26%);
 }
 
-.container {
+#container {
   display: flex;
   border-radius: 2em;
   flex-direction: column;
@@ -64,7 +64,7 @@ svg {
   padding-bottom: 0.2em;
 }
 
-p {
+.message {
   font-family: Roboto_Regular;
   font-size: 16px;
   width: 100%;
@@ -148,4 +148,46 @@ input[type="text"] {
   font-family: Roboto_Regular;
   font-size: 16px;
   padding-left: 1em;
+}
+
+#thank-you-message {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 27%;
+  height: 49vh;
+  padding: 3em;
+  border-radius: 1.5em;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bullet {
+  content: url(./assets/images/icon-list.svg);
+  width: 15%;
+  height: 15%;
+  margin-bottom: 1.5em;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribed {
+  font-family: Roboto;
+  font-size: 3.3vw;
+  margin: 0;
+  color: hsl(234, 29%, 20%);
+}
+
+.confirmation {
+  font-family: Roboto_Regular;
+  font-size: 16px;
+}
+
+#dismiss {
+  width: 100%;
 }
