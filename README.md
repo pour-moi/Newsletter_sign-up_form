@@ -8,7 +8,7 @@ The goal of this challenge is to create a responsive sign-up form for a newslett
 
 ## My Progress
 
-So far, I have built the form using semantic HTML and styled it using CSS. I have not yet started working on the JavaScript portion of the challenge.
+So far, I have built the form using semantic HTML and styled it using CSS. I have also started working on the JavaScript portion of the challenge, but it is not yet complete.
 
 ## Feedback
 
