@@ -1,12 +1,19 @@
 let emailInput = document.getElementById("email");
 let validation = document.getElementById("validation");
 let subscribe = document.getElementById("subscribe");
+let input = document.querySelector("input[type='text']");
 
 subscribe.addEventListener("click", function () {
   let email = emailInput.value;
   if (validateEmail(email)) {
     validation.textContent = "Valid Email Address";
-  } else validation.textContent = "Invalid Email Address";
+  } else {
+    validation.style.color = "rgb(248, 58, 58)";
+    validation.textContent = "Valid email required";
+    input.style.color = "rgb(248, 58, 58)";
+    input.style.backgroundColor = "rgb(247, 222, 222)";
+    input.style.borderColor = "rgb(248, 58, 58)";
+  }
 });
 
 function validateEmail(email) {
