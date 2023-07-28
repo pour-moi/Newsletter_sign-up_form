@@ -62,6 +62,13 @@
             href="./assets/images/illustration-sign-up-desktop.svg" " x="0"
             y="0" height="105%" width="100%"/>
           </svg>
+          <picture>
+            <source
+              media="(max-width: 414px)"
+              srcset="./assets/images/illustration-sign-up-mobile.svg"
+            />
+            <img src="desktop.jpg" alt="Image" class="mobile" />
+          </picture>
         </div>
       </div>
     </div>
@@ -77,7 +84,9 @@
           Please open it and click the button inside to confirm your
           subscription.
         </p>
-        <button id="dismiss">Dismiss message</button>
+        <div class="button-container">
+          <button id="dismiss">Dismiss message</button>
+        </div>
       </div>
     </div>
     <!-- Success message end -->
@@ -86,7 +95,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/pour-moi">Biruk.M</a>.
+      >. Coded by <a href="#">Biruk.M</a>.
     </div>
   </body>
   <script src="script.js"></script>
