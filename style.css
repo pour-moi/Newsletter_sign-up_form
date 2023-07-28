@@ -195,25 +195,48 @@ input[type="text"] {
 @media (max-width: 414px) {
   body {
     background-color: white;
+    margin: 0;
   }
 
   #container {
-    width: 90%;
-    padding: 2em;
-    padding-right: 2em;
-    padding-left: 2em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
   }
 
   .info {
     width: 100%;
+    align-items: center;
   }
 
   .title {
-    font-size: 6vw;
+    padding-right: 7em;
+  }
+
+  .title {
+    font-size: 7vw;
   }
 
   .right svg {
     display: none;
+  }
+
+  button {
+    margin-bottom: 1em;
+  }
+
+  .mobile {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .main {
+    height: 100%;
   }
 
   .container1 {
@@ -236,5 +259,10 @@ input[type="text"] {
 
   .bullet {
     margin-top: 6em;
+  }
+  .message {
+    width: 90%;
+    margin: 0;
+    padding: 0;
   }
 }
